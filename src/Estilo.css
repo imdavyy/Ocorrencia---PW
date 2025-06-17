@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body,
+.login-body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: url('/placa1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-container,
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.login-header,
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header img,
+.header img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.login-header h2,
+.header h2 {
+  color: #0056b3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.ocorrencias-list {
+  margin-top: 2rem;
+}
+
+.ocorrencias-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ocorrencias-list li {
+  background-color: #e9f0fb;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #007bff;
+  border-radius: 4px;
+}
+
+.ocorrencias-list button {
+  margin-top: 0.5rem;
+  background-color: #dc3545;
+}
+
+.ocorrencias-list button:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+  .login-container,
+  .container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
